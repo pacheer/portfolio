@@ -7,17 +7,17 @@
     *===========================-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Zieno. Personal Portfolio Landing Page">
+    <meta name="description" content="Ryan Augustine Lim">
 
     <!--=========================*
               Page Title
     *===========================-->
-    <title>Zieno. Personal Portfolio Landing Page</title>
+    <title>Ryan Augustine Lim – Portfolio - Gleam</title>
 
     <!--=========================*
                 Favicon
     *===========================-->
-    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="images/ryan-favicon.jpg">
 
     <!--=========================*
             Bootstrap Css
@@ -38,12 +38,17 @@
     <!--=========================*
                Fancy Box
     *===========================-->
-    <link href="css/jquery.fancybox.css" rel="stylesheet" />
+    <link href="css/jquery.fancybox.css" rel="stylesheet"/>
 
     <!--=========================*
               Animate CSS
     *===========================-->
     <link href="css/animate.css" rel="stylesheet" type="text/css">
+
+    <!--=========================*
+              Toastr CSS
+    *===========================-->
+    <link rel="stylesheet" href="css/toastr.min.css">
 
     <!--=========================*
             Google Fonts
@@ -113,18 +118,15 @@
                                     <span class="icon-bar"></span>
                                 </button>
                                 <div class="logo">
-                                    <a href="#"><img src="images/logo.png" alt="Logo"></a>
+                                    <a href="./index.html"><img src="images/ryan-logo.png" alt="Ryan A. Lim"></a>
                                 </div>
                             </div> <!-- .navbar-header -->
                             <div class="navbar-collapse collapse">
                                 <ul class="nav navbar-nav navbar-right">
                                     <li><a href="index.html#home">Home</a></li>
                                     <li><a href="index.html#mt_about_me">About</a></li>
-                                    <li><a href="index.html#mt_portfolio">Portfolio</a></li>
-                                    <li><a href="index.html#mt_services">Services</a></li>
-                                    <li><a href="index.html#mt_blog">Blog</a></li>
-                                    <li><a href="index.html#mt_pricing">Pricing</a></li>
-                                    <li><a href="index.html#mt_contact">Contact Us</a></li>
+                                    <li class="active"><a href="index.html#mt_portfolio">Portfolio</a></li>
+                                    <li><a href="index.html#mt_contact">Contact Me</a></li>
                                 </ul>
                             </div>
                         </div> <!-- .col-md-12 -->
@@ -151,40 +153,32 @@
                         <div class="owl-carousel">
                             <div class="item">
                                 <div class="portfolio_hover">
-                                    <img src="images/portfolio-detail/05.jpg" alt="Project Image" />
-                                    <a href="images/portfolio-detail/05.jpg" class="fancybox">
+                                    <img src="images/gleam-banner1.png" alt="Gleam Banner Image 1" />
+                                    <a href="images/gleam-banner1.png" class="fancybox">
                                         <i class="ion-ios-plus-empty"></i>
                                     </a>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="portfolio_hover">
-                                    <img src="images/portfolio-detail/01.jpg" alt="Project Image" />
-                                    <a href="images/portfolio-detail/01.jpg" class="fancybox">
+                                    <img src="images/gleam-banner2.png" alt="Gleam Banner Image 2" />
+                                    <a href="images/gleam-banner2.png" class="fancybox">
                                         <i class="ion-ios-plus-empty"></i>
                                     </a>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="portfolio_hover">
-                                    <img src="images/portfolio-detail/02.jpg" alt="Project Image" />
-                                    <a href="images/portfolio-detail/02.jpg" class="fancybox">
+                                    <img src="images/gleam-banner3.png" alt="Gleam Banner Image 3" />
+                                    <a href="images/gleam-banner3.png" class="fancybox">
                                         <i class="ion-ios-plus-empty"></i>
                                     </a>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="portfolio_hover">
-                                    <img src="images/portfolio-detail/03.jpg" alt="Project Image" />
-                                    <a href="images/portfolio-detail/03.jpg" class="fancybox">
-                                        <i class="ion-ios-plus-empty"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="portfolio_hover">
-                                    <img src="images/portfolio-detail/04.jpg" alt="Project Image" />
-                                    <a href="images/portfolio-detail/04.jpg" class="fancybox">
+                                    <img src="images/gleam-banner4.png" alt="Gleam Banner Image 4" />
+                                    <a href="images/gleam-banner4.png" class="fancybox">
                                         <i class="ion-ios-plus-empty"></i>
                                     </a>
                                 </div>
@@ -197,19 +191,149 @@
         <div class="row">
             <div class="col-xs-12 col-sm-8 col-sm-offset-2">
                 <div class="portfolio_description">
-                    <h1>Creative Digital Design</h1>
-                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have fered altation in some form, by injmour, or randomised words which don't look even slightlievable. Iyoare going use a passage of Lorem Ipsum.
-                    </p>
-                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
-                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have fered altation in some form, by injmour, or randomised words which don't look even slightlievable. Iyoare going use a passage of Lorem Ipsum.
-                    </p>
+                    <h1>BearBulb: Energy Management for Campus Residents (Work in Progress)</h1>
+                    <p><i>Campus residents in the National University of Singapore aren't made to pay for utilites by the meter. As a result, heaps of energy is wasted every academic year when residents move back in and shrug at the inconsequential act of leaving their utilities on. BearBulb is an ongoin project that aims to address the problem of using energy utilities irresponsibly in the absence of perceived consequences for doing so.</i></p>
+                    <p><i>This project is being undertaken for partial completion of CS3240 – Interaction Design, the landmark class on UI/UX design hosted by the School of Computing, National University of Singapore.</i></p>
+                    <h3>1. Overview</h3>
+                    <h4>a. Objective</h4>
+                    <p>Conceptualise a product that would .</p>
+                    <h4>b. Approach</h4>
+                    <p>I conducted user research (interviews and contextual inquiries) with various students of the National University of Sinagpore and working adults to identify the common themes that surface in note-taking and retrieval. This empathy-driven approach allowed me to realise the common habits that people who take notes encounter, and what their usage habits were.</p>
+                    <p>I also conducted a brief analysis of current solutions to look at existing user-interfaces of popular note-taking applications. By comparing and contrasting existing products against primary research, I could not only find out what users required, but also what current designs weren't able to achieve.</p>
+                    <h4>c. Duration</h4>
+                    <p>Mid September 2018 – End October 2018</p>
+                    <h4>d. Tools</h4>
+                    <p>Pen and paper | Adobe XD</p>
+                    <h3>2. Process</h3>
+                    <h4>Research</h4>
+                    <p>An iterative approach to user reserach was adopted to ensure that production could be agile, and that users could be kept in close consultation during the design process.</p>
+                    <p>The users of digital note-taking are diverse, but were defined to be:</p>
+                    <ul>
+                        <li>Familiar with mobile techology</li>
+                        <li>Literate</li>
+                        <li>In need for notes to be taken in almost any scenario</li>
+                    </ul>
+                    <h5>Sample</h5>
+                    <p>As such, purposive and convenience sampling was adopted. Personal friends who studied in the National University of Singapore were approached, and asked to participate in research for a school project. To ensure some diversity in sampling, I also approached two friends who were working adults, above the age group of typical university students. In total, 6 people were interviewed, amongst whom, 4 were university students, and 2 were working adults. All of whom were active note-takers and digitally literate.</p>
+                    <h4>Interviews</h4>
+                    <p>Semi-structured interviews were conducted with the said participants. These were one-to-one interviews that aimed to explore in-depth the lives, habits, and problems that are faced by the target users. Semi-structured interviews are guided by prepared questions, but remain open to being framed by the responses gathered during the interview iteslf. As such, questions are likely to change and be adjusted during the interview itself, in order to ensure that the problems encountered by users emerge from the users themselves.</p>
+                    <h5>Analysis</h5>
+                    <p>When I received their feedback, I would triangulate research findings through a thematic analysis, guided by affinity diagrams that contained quotes of their responses.</p>
+                    <h3>3. Findings</h3>
+                    <div style="text-align:center"><img src="images/gleam-findings.png" alt="Gleam Findings"/></div>
+                    <h3>4. Current Solutions</h3>
+                    <div id="solutions" style="text-align: center">
+                    <div style="display:inline-flex; margin:3px;"><figure><img src="images/gleam-evernote.jpg" height="400px" width="auto" style="box-shadow: 0 2px 20px rgba(3, 3, 3, 0.29)"><figcaption style="font-size:11pt; margin: 10px;">Evernote</figcaption></figure></div>
+                    <div style="display:inline-flex; margin:3px;"><figure><img src="images/gleam-iphone-notes.jpg" height="400px" width="auto" style="box-shadow: 0 2px 20px rgba(3, 3, 3, 0.29)"><figcaption style="font-size:11pt; margin: 10px;">iPhone Notes App</figcaption></figure></div>
+                        </div>
+                    <p>After speaking with users, two commonly turned to solutions were identified: Evernote and iPhone Notes App. Both notes notably had the feature of searching for notes, and the function to search for notes was placed at the "home" page, or the first page the user would visit upon opening the app.</p>
+                    <h3>5. Affinity Diagram</h3>
+                    <div style="text-align:center"><img src="images/gleam-affinity-diagram.png"></div>
+                    <p>From the data gathered, it slowly became obvious that, firstly, people were really forgetful creatures (Theme: Forgetfulness). That's not of course, not their fault, because secondly, people do try their best to remember imemdiately when they think something is important (Theme: Immediacy). This happens be it through photos, text, and for two participants, audio (Theme: Multimedia). Audio, particularly, was useful because it could be hands-free. Note-taking was found to be strangely difficult. To be able to take notes means you'd have to categorise it in order for it to be easily found. This ironically mean that, contrary to the powerful sorting features of established products like Evernote, too many options makes it harder for people (Theme: Unable to Categorise). Finally, current solutions are apprently either "too much" or "too little", or what I term as the "Goldilocks Problem". Users want a note app for one thing – not forgetting. Current products, like Evernote, enable that, but also complicate the documentation process by requiring users to categorise their own content.</p>
+                    <p>In total, the product needs to be guided by the principle of "Supporting the Short-term Memory". Note-taking is more than just documentation – it's also ensuring that documentation is lean. This is the guiding principle that will guide the UI design process.</p>
+                    <h3>6. Task Analysis</h3>
+                    <div style="text-align:center"><img src="images/gleam-task-analysis.png"></div>
+                    <p></p>
+                    <h3>7. User Personas</h3>
+                    <div style="text-align:center"><img src="images/gleam-user-personas.png"></div>
+                    <p></p>
+                    <h3>8. Final Design</h3>
+                   <div style="text-align:center">
+                       <figure>
+                        <div style="display:inline-flex">
+                            <video autoplay loop muted inline width="auto" height="480px">
+                            <source src="images/gleam-home.mp4" type="video/mp4"></video>
+                        </div>
+                        <div style="display:inline-flex">
+                            <video autoplay loop muted inline width="auto" height="480px">
+                            <source src="images/gleam-home-notes.mp4" type="video/mp4"></video>
+                        </div>
+                           <figcaption style="font-size:11pt; margin: 10px;">Gleam Home and Notes Function </figcaption>
+                        </figure>
+                    </div>
+                    <h4>a. Concept</h4>
+                    <p>Gleam is not just about taking down notes, but it's also about making them easy to sort and find. Indeed, as the user study has proven, note-taking isn't an activity taken alone – users need to encounter the process of note-retrieval, a different task process that surfaces a different set of problems.</p>
+                    <p>With the overarching idea of assisting user's short-term memory across the note-taking and note-retireval processes, Gleam was designed with three principles in mind: 1) Provide instant recollection, 2) Fast documentation, 3) Sort for the user.</p>
+                    <h4>b. Features</h4>
+                    <div style="text-align:center">
+                        <video autoplay loop muted inline width="auto" height="480px">
+                        <source src="images/gleam-home-notes-filter.mp4" type="video/mp4"></video></div>
+                    <p><b>1. Sort for the user, Only by Tags</b></p>
+                    <p>Gleam got rid of the convoluted method of sorting notes by notebooks (a la Evernote). Tags work the same way that notebooks do, in that they categorise and they help the user sort. The difference between tags and notebooks is that tags are located in one mental &quot;space&quot;. A user's mental model needs to expand if s/he has to process that his/her notes are in a particular location or segment. Tags remove this cognitive demand from the user.</p>
+                    <p>Furthermore, in line with the principle of sorting for the user, an advanced feature that Gleam is conceptualised to have is the Automatic Tagging and Titling feature, driven by AI. AI would detect the content of the note that was just created, and if the user has not changed the default title or tag of the note, Gleam will ask the user if it can recommend tags and titles for the user. Notes that have their titles and tags automaticallly generated will also be tagged with "Auto-tag" so that if need be, the user can easily inspect automatically tagged notes. The utility of the Automatic Tiling and Tagging function, as compared to manually titling and tagging, is illustrated in the videos below.</p>
+                   <div style="text-align:center">
+                       <figure>
+                        <div style="display:inline-flex">
+                            <video autoplay loop muted inline width="auto" height="480px">
+                            <source src="images/gleam-write-normal.mp4" type="video/mp4"></video>
+                        </div>
+                           <figcaption style="font-size:11pt; margin: 10px;">Gleam New Notes Function with Manual Tagging and Titling</figcaption>
+                        </figure>
+                    </div>
+                   <div style="text-align:center">
+                       <figure>
+                    <div style="display:inline-flex">
+                            <video autoplay loop muted inline width="auto" height="480px">
+                            <source src="images/gleam-write-auto.mp4" type="video/mp4"></video>
+                        </div>
+                           <figcaption style="font-size:11pt; margin: 10px;">Gleam New Notes with Automatic Tagging and Titling</figcaption>
+                        </figure>
+                    </div>
+                    <p><b>2. AI-Generated Word Cloud</b></p>
+                    <p>Concordant with the idea of providing instant recollection, the main feature of Gleam is an AI-Generated Word Cloud that the user encounters on the front page. This word cloud briefly scans the internal contents of the users' notes for him/her, and displays it in a way that is accessible.</p>
+                   <div style="text-align:center">
+                       <figure>
+                        <div style="display:inline-flex">
+                            <video autoplay loop muted inline width="auto" height="480px">
+                            <source src="images/gleam-cloud-filter.mp4" type="video/mp4"></video>
+                        </div>
+                           <figcaption style="font-size:11pt; margin: 10px;">Filtering by Gleam's AI-Generated Word Cloud</figcaption>
+                        </figure>
+                    </div>
+                   <p>Word cloud remains visible while the user searches on the home screen. This deliberately enables the user to be able to browse related keywords that s/he might not have been able to immediately recall, as was uncovered by my user interviews. The word cloud, then, acts as a visual mental aid to assist the user's cognitive ability of recollection.</p>
+                   <div style="text-align:center">
+                       <figure>
+                        <div style="display:inline-flex">
+                            <video autoplay loop muted inline width="auto" height="480px">
+                            <source src="images/gleam-search-word-cloud.mp4" type="video/mp4"></video>
+                        </div>
+                           <figcaption style="font-size:11pt; margin: 10px;">Searching while assisted by Gleam's AI Word Cloud</figcaption>
+                        </figure>
+                    </div>
+                    <p><b>3. Fast and easy note-creation</b></p>
+                    <p>Finally, the process of creating notes remains accessible wherever in the app the user is. They can also choose to create notes instantly with text, photo/video, or audio.</p>
+                   <div style="text-align:center">
+                       <figure>
+                        <div style="display:inline-flex">
+                            <video autoplay loop muted inline width="auto" height="480px">
+                            <source src="images/gleam-note-write.mp4" type="video/mp4"></video>
+                        </div>
+                        <div style="display:inline-flex">
+                            <video autoplay loop muted inline width="auto" height="480px">
+                            <source src="images/gleam-note-photo.mp4" type="video/mp4"></video>
+                        </div>
+                        <div style="display:inline-flex">
+                            <video autoplay loop muted inline width="auto" height="480px">
+                            <source src="images/gleam-note-audio.mp4" type="video/mp4"></video>
+                        </div>                           
+                           <figcaption style="font-size:11pt; margin: 10px;">Three ways of quickly creating notes on Gleam.</figcaption>
+                        </figure>
+                    </div>
+                    <p>Enabling the user to write in any medium they prefer and at any part of the application fulfils the principle of allowing fast documentation, so that users will be able to record what they need, when they need it.</p>                    
+                  <div style="text-align:center">
+                       <figure>
+                        <div style="display:inline-flex">
+                            <video autoplay loop muted inline width="auto" height="480px">
+                            <source src="images/gleam-notes-note-write.mp4" type="video/mp4"></video>
+                        </div>              
+                           <figcaption style="font-size:11pt; margin: 10px;">Wtiting from the notes section of Gleam.</figcaption>
+                        </figure>
+                    </div>
                     <div class="portfolio_sidebar">
                         <ul>
-                            <li><div class="mt_sidebar_tx">Client: <span>Raventhemez</span></div> </li>
-                            <li><div class="mt_sidebar_tx">Created By: <span>Raventhemez</span></div> </li>
-                            <li><div class="mt_sidebar_tx">Completed: <span>20 Apr 2018</span></div> </li>
-                            <li><div class="mt_sidebar_tx">Tools: <span>Photoshop, Indesign</span></div> </li>
-                            <li><div class="mt_sidebar_tx">Visit: <span><a href="http://www.google.com" class="mt_visit_link">www.google.com</a></span></div> </li>
+                            <li><div class="mt_sidebar_tx">Title: <span>Gleam</span></div> </li>
+                            <li><div class="mt_sidebar_tx">Completed: <span>1 Nov 2018</span></div> </li>
+                            <li><div class="mt_sidebar_tx">Tools: <span>Adobe XD</span></div> </li>
                         </ul>
                     </div>
                     <a href="#" class="mt_btn_grey">Visit Project</a>
