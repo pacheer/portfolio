@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/appstyle.css">
+        <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Press+Start+2P">  <!-- Open Font License http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL_web -->
+        <script type="text/javascript" src="jslibs/raphael.js"></script>
+        <script type="text/javascript" src="jslibs/screenfull.js"></script>
+        <script type="text/javascript" data-main="appscripts/main.js" src="jslibs/require.js">
+        </script>
+        <script type="text/javascript" data-main="appscripts/main.js" src="node_modules/raphael-paragraph-master/dist/raphael-paragraph.js"></script>
+        <title>Class Participation: The Game</title>
+        <link rel="icon" href="resources/hand.png">
+    </head>
+
+    <body class="noselect">
+        <div id="gameCanvas">
+        </div>
+        <div id="gameStats">
+            <div id ="row1">
+                <div id="timeStats">
+                    TIME: 0s
+                </div>
+                <div id="timer4display">
+                    &bull; 5s &bull;
+                </div>
+                <div id="partiStats">
+                    PARTICIPATION MARKS: 0
+                </div>
+            </div>
+                <div id="instructions">
+                </div>
+                <textarea id="messageBox" value="Type here!" cols="100" rows="2"></textarea>
+                <button id="submitBtn" class="button">Participate!</button>
+                <div id="nextButton">
+                    <button class="button">Next ></button>
+                </div>
+        </div>
+<!--          <div id="fullscreen">
+                <h1>Hey, do you mind?</h1>
+                <p>It's best to play this game in fullscreen. Is that OK with you?<br> Cancelling will load the game in your current browser's dimensions.<br>
+                (Which might suck!)
+                </p>
+                <center>
+                    <input type="button" id="okBtn" class="buttonFullscreen" value="OK!">
+                    <input type="button" id="noBtn" class="buttonFullscreen" value="No thanks">
+                </center>
+            </div> -->
+    </body>
+</html>
+

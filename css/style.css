@@ -970,7 +970,7 @@ background: linear-gradient(180deg, rgba(191,191,191,.6) 0%, rgba(231,231,231,0.
       position: relative; } }
   @media only screen and (min-width: 480px) and (max-width: 620px) {
     #mt_banner {
-      height: 560px !important;
+      height: 800px !important;
       overflow: hidden;
       position: relative; } }
   @media only screen and (max-width: 620px) {
